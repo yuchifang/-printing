@@ -1,0 +1,132 @@
+$color_orange: #ff6e3a
+
+*
+ 
+  font-family: 微軟正黑體
+  //debug
+//   border: solid 1px red
+//   header
+ 
+//     display: none
+//   section
+//     display: none
+//   section#section_future
+//     display: block
+  
+body
+  height: 1000px
+h1,h2,h3,h4,h5,h5.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+
+nav.navbar
+  transition: 0.5s
+  a
+    &:hover
+      color: $color_orange
+  
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.navbar-top
+  background-color: transparent
+  button
+    color: white
+  a
+    color: white
+    transition: 0.5s
+    &:hover
+      color: $color_orange
+  
+  
+header.jumbotron
+  text-align: center
+  background-image: url(http://app.starq.com.cn/wechat/jm/wx_images/BB4D412A7C3A242439A1A61B1EDC72B1.jpg)
+  background-size: cover
+  background-attachment: fixed
+    //背景黏著放試是固定的
+  margin-bottom: 0px//jembottron 預設margin 
+  border-radius: 0//jembottron 預設border-radius
+  .container
+    color: white
+    padding: 200px 0px
+  hr 
+    max-width: 50px
+    border: solid 2px $color_orange
+  h6
+    color: rgba(white,0.5)
+    font-weight: normal
+section
+  padding: 50px 0px
+section#section_ask
+  background-color: $color_orange
+  .col-sm-5.img
+    background-image: url(https://www.booklife.com.tw/upload_files/booklife/website/g0200021%20-c2.jpg)
+    height: 300px
+    //改變圖片底色
+    mix-blend-mode: multiply
+  h2
+    margin-top: 110px
+    padding: 0px 20px//上下 左右
+    
+section#section_about
+  img
+    width: 200%
+  .img_wrap
+    height: 220px
+    overflow: hidden //多出來的地方裁掉//但銀幕變小 會走板
+
+section#section_story
+  background-color: #222
+  color: white
+  padding: 0
+  .col-sm-5
+    background-image: url(http://img.sj33.cn/uploads/allimg/201407/7-140G5095K3X0.png)
+    background-size: 100% auto
+    height: 400px
+    .cross
+      position: absolute
+      left: 20%
+      top: 40%
+      color: red
+      font-size: 30px
+      font-weight: blod
+  .col-sm-7
+    text-align: center
+    i
+      font-size: 40px
+  .col-sm-7 .col-sm-12 p
+    text-align: left
+  .col-sm-12.features
+    margin: 30px 0px
+    
+section#section_future
+  
+  img
+    width: 100%
+   
+  i
+    font-size: 40px
+  .feature
+    padding: 10px 0
+
+footer.jumbotron
+  text-align: center
+  background-image: url(http://app.starq.com.cn/wechat/jm/wx_images/BB4D412A7C3A242439A1A61B1EDC72B1.jpg)
+  background-size: cover
+  background-attachment: fixed
+    //背景黏著放試是固定的
+  margin-bottom: 0px//jembottron 預設margin 
+  border-radius: 0//jembottron 預設border-radius
+  input
+    background-color: transparent
+   
+    //transparent 透明的
+    max-width:  400px
+    margin-right: auto
+    margin-left: auto
+  input::placeholder
+      color: $color_orange
+
+  .container
+    color: white
+    padding: 60px 0px
+  hr 
+    max-width: 50px
+    border: solid 2px $color_orange
